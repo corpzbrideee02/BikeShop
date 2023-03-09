@@ -1,0 +1,257 @@
+@charset "UTF-8";
+.container {
+  height: calc(90vh);
+  margin-top: 2vh;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 4vh; /* Set the fixed height of the footer here */
+  line-height: 5vh; /* Vertically center the text there */
+  background-color: var(--teal-900);
+  color: white;
+
+  font-family: "Nanum Pen Script", cursive;
+}
+
+footer a{
+  color: white;
+  text-decoration: none;
+}
+.status {
+  font-size: 1rem;
+  margin: 2vh;
+  color: var(--primary-color);
+}
+.heading {
+  margin: 1vh;
+  color: var(--teal-900);
+  font-weight: bolder;
+  font-family: "Aclonica", sans-serif;
+}
+.heading2 {
+  margin-top: 2vh;
+  color: rgb(34, 72, 75);
+
+  font-family: "Nanum Pen Script", cursive;
+}
+#homeBikeImage {
+  /* margin: 2vh; */
+  border-radius: 15px;
+}
+
+.product-image {
+  width: 20vw;
+  margin: 0;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.selected-product-img {
+  width: 50vw;
+  margin: 0;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 15px;
+}
+
+.dialog-border {
+  border: 1px solid;
+  margin: 2vw;
+  width: 90vw;
+  color: var(--teal-900);
+}
+
+#qty {
+  height: 5vh !important;
+  font-size: small;
+  text-align: right;
+  width: 12vw;
+}
+/* Override inputNumber Button style */
+/* .incDec {
+  background-color: teal;
+} */
+
+.dialog-status {
+  font-size: 1rem;
+  margin: 1vh;
+  color: #ff4081;
+  text-align: center;
+}
+/* Override Toolbar Style */
+.p-toolbar {
+  background-color: teal;
+  color: var(--primary-color-text);
+  /*  width: 96vw; */
+}
+.p-button {
+  /*  background-color: rgb(34, 72, 75); */
+  background-color: var(--teal-900);
+}
+.p-field {
+  text-align: left;
+  width: 50vw;
+  margin-top: 3vh;
+  margin-left: 25vw;
+}
+.p-field-label {
+  margin-bottom: 50px;
+}
+/* for the password pi pi-eye */
+.p-input-icon-right {
+  top: -20px;
+}
+.orderNum {
+  font-size: 1.5rem;
+  color: var(--teal-900);
+  font-weight: bolder;
+  font-family: "Nanum Pen Script", cursive;
+  display: inline-flex;
+  float: left;
+}
+.orderDate {
+  font-size: 1.5rem;
+  color: var(--teal-900);
+  font-weight: bolder;
+  font-family: "Nanum Pen Script", cursive;
+  float: right;
+  display: inline-flex;
+}
+.order-head {
+  font-size: 1rem;
+  color: var(--teal-900);
+  font-weight: bolder;
+  font-family: "Aclonica", sans-serif;
+  margin: 3vh;
+  text-align: center;
+}
+
+/* To have an extra space before the footer */
+.clear {
+  clear: both;
+  height: 60px;
+}
+/* LoginPage */
+
+.loginPageContainer {
+  border: 1px solid;
+  margin: auto;
+  color: var(--teal-900);
+  box-shadow: 5px 5px 5px gray;
+  background-color: var(--teal-50);
+  border-radius: 10px;
+  padding-top: 2rem;
+}
+
+/* Register Page */
+.registerContainer {
+  border: 1px solid;
+  margin: auto;
+  color: var(--teal-900);
+  box-shadow: 5px 5px 5px gray;
+  background-color: var(--teal-50);
+  border-radius: 10px;
+  padding: 2rem 0 1rem 0;
+}
+
+/* Override textfield margins */
+.p-field {
+  margin: 3vh 5vw 0 5vw;
+  width: auto;
+}
+
+/* mobile screens */
+@media (max-width: 480px) {
+  #homeBrands {
+    background-color: rgb(183, 216, 216);
+    margin-bottom: 3rem;
+    position: absolute;
+    bottom: -1vh;
+    width: 100vw;
+    left: 0;
+  }
+  .heading {
+    font-size: 1.5rem;
+  }
+  .heading2 {
+    font-size: 1.4rem;
+  }
+  #homeBikeImage {
+    max-width: 50vw;
+    max-height: 20vh;
+  }
+  .brandsImg {
+    width: 100px;
+    height: 60px;
+  }
+  #homeLogoImg {
+    display: none;
+  }
+  .registerContainer,
+  .loginPageContainer {
+    width: 90vw;
+    margin-top: 2rem;
+  }
+}
+/* tablets and small laptops */
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+  #homeBrands {
+    background-color: rgb(183, 216, 216);
+    margin-bottom: 5rem;
+    position: absolute;
+    bottom: -1vh;
+    width: 100vw;
+    left: 0;
+  }
+  .heading {
+    font-size: 2.5rem;
+  }
+  .heading2 {
+    font-size: 2rem;
+  }
+  #homwBikeImage {
+    width: 50vw;
+    height: 25vh;
+  }
+  .brandsImg {
+    width: 160px;
+    height: 80px;
+  }
+  .registerContainer,
+  .loginPageContainer {
+    width: 50vw;
+    margin-top: 7rem;
+  }
+}
+/* larger screens */
+@media (min-width: 769px) {
+  #homeBrands {
+    background-color: rgb(183, 216, 216);
+    margin-bottom: 5rem;
+    position: absolute;
+    bottom: -1vh;
+    width: 100vw;
+    left: 0;
+  }
+  .heading {
+    font-size: 2.5rem;
+  }
+  .heading2 {
+    font-size: 2rem;
+    margin-top: 1px;
+  }
+  #homeBikeImage {
+    max-width: 30vw;
+    max-height: 30vh;
+  }
+  .brandsImg {
+    width: 160px;
+    height: 80px;
+  }
+  .registerContainer,
+  .loginPageContainer {
+    width: 40vw;
+    margin-top: 7rem;
+  }
+}
